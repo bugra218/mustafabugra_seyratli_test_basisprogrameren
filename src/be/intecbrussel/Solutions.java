@@ -7,13 +7,13 @@ public class Solutions {
 
         int f = 0;
 
-        if (a > b & a > c & a > d) {
+        if (a >= b & a >= c & a >= d) {
             f = a;
-        } else if (b > a & b > c & b > d) {
+        } else if (b >= a & b >= c & b >= d) {
             f = b;
-        } else if (c > a & c > b & c > d) {
+        } else if (c >= a & c >= b & c >= d) {
             f = c;
-        } else if (d > a & d > b & d > c) {
+        } else{
             f = d;
         }
         return f;
@@ -21,15 +21,15 @@ public class Solutions {
 
     public static int smallestNumber(int a, int b, int c, int d) {
 
-        int f = 0;
+        int f;
 
-        if (a < b & a < c & a < d) {
+        if (a <= b & a <= c & a <= d){
             f = a;
-        } else if (b < a & b < c & b < d) {
+        } else if (b <= a & b <= c & b <= d) {
             f = b;
-        } else if (c < a & c < b & c < d) {
+        } else if (c <= a & c <= b & c <= d) {
             f = c;
-        } else if (d < a & d < b & d < c) {
+        } else{
             f = d;
         }
         return f;
@@ -57,10 +57,10 @@ public class Solutions {
 
     public static void zeroToHundred() {
 
-        int b = 100;
-        for (int a = 0; a < 100; a++) {
-            System.out.println(a + "-" + b);
-            b = b - 1;
+
+        for (int a = 0 ; a < 100; a++) {
+            System.out.println(a);
+            System.out.println(-(a-100));
         }
 
 
