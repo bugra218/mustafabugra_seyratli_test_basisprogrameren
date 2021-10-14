@@ -5,7 +5,7 @@ package be.intecbrussel;
 public class Solutions {
     public static int biggestNumber(int a, int b, int c, int d) {
 
-        int f = 0;
+        int f;
 
         if (a >= b & a >= c & a >= d) {
             f = a;
