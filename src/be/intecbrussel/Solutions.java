@@ -3,52 +3,52 @@ package be.intecbrussel;
 
 
 public class Solutions {
-    public static int biggestNumber(int a, int b, int c, int d) {
+    public static int biggestNumber(int firstNumber, int secondNumber, int thirdNumber, int forthNumber) {
 
-        int f;
+        int answer;
 
-        if (a >= b & a >= c & a >= d) {
-            f = a;
-        } else if (b >= a & b >= c & b >= d) {
-            f = b;
-        } else if (c >= a & c >= b & c >= d) {
-            f = c;
+        if (firstNumber >= secondNumber & firstNumber >= thirdNumber & firstNumber >= forthNumber) {
+            answer = firstNumber;
+        } else if (secondNumber >= firstNumber & secondNumber >= thirdNumber & secondNumber >= forthNumber) {
+            answer = secondNumber;
+        } else if (thirdNumber >= firstNumber & thirdNumber >= secondNumber & thirdNumber >= forthNumber) {
+            answer = thirdNumber;
         } else{
-            f = d;
+            answer = forthNumber;
         }
-        return f;
+        return answer;
     }
 
-    public static int smallestNumber(int a, int b, int c, int d) {
+    public static int smallestNumber(int firstNumber, int secondNumber, int thirdNumber, int forthNumber) {
 
-        int f;
+        int answer;
 
-        if (a <= b & a <= c & a <= d){
-            f = a;
-        } else if (b <= a & b <= c & b <= d) {
-            f = b;
-        } else if (c <= a & c <= b & c <= d) {
-            f = c;
+        if (firstNumber <= secondNumber & firstNumber <= thirdNumber & firstNumber <= forthNumber){
+            answer = firstNumber;
+        } else if (secondNumber <= firstNumber & secondNumber <= thirdNumber & secondNumber <= forthNumber) {
+            answer = secondNumber;
+        } else if (thirdNumber <= firstNumber & thirdNumber <= secondNumber & thirdNumber <= forthNumber) {
+            answer = thirdNumber;
         } else{
-            f = d;
+            answer = forthNumber;
         }
-        return f;
+        return answer;
 
 
     }
 
-    public static void smallestNumberToMean(int a, int b, int c, int d, int e) {
-        int f = (a + b + c + d) / 4;
-        for (int g = e; g < f; g++) {
+    public static void smallestNumberToMean(int firstNumber, int secondNumber, int thirdNumber, int fourthNumber, int smallestResult) {
+        int mean = (firstNumber + secondNumber + thirdNumber + fourthNumber) / 4;
+        for (int result = smallestResult; result < mean; result++) {
 
-            System.out.println(g);
+            System.out.println(result);
         }
     }
 
-    public static void zeroToTwo(int a, int b, int c, int d) {
+    public static void zeroToTwo(int firstNumber, int secondNumber, int thirdNumber, int fourthNumber) {
 
         for (int e = 1; e < 2000; e++) {
-            if (e == a || e == b || e == c || e == d) {
+            if (e == firstNumber || e == secondNumber || e == thirdNumber || e == fourthNumber) {
                 break;
             }
         }
@@ -58,9 +58,9 @@ public class Solutions {
     public static void zeroToHundred() {
 
 
-        for (int a = 0 ; a < 100; a++) {
-            System.out.println(a);
-            System.out.println(-(a-100));
+        for (int startingNumber = 0 ; startingNumber < 100; startingNumber++) {
+            System.out.println(startingNumber);
+            System.out.println(-(startingNumber-100));
         }
 
 

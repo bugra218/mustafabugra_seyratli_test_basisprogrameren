@@ -9,11 +9,11 @@ public class BasicProgrammingApp {
         Scanner scan1 = new Scanner(System.in);
         System.out.println("Please write the first number");
         int userNumber1 = scan1.nextInt();
-        System.out.println("Please write the first second");
+        System.out.println("Please write the second number");
         int userNumber2 = scan1.nextInt();
-        System.out.println("Please write the first third");
+        System.out.println("Please write the third number");
         int userNumber3 = scan1.nextInt();
-        System.out.println("Please write the first fourth");
+        System.out.println("Please write the fourth number");
         int userNumber4 = scan1.nextInt();
         int biggestResult = biggestNumber(userNumber1,userNumber2,userNumber3,userNumber4);
         int smallestResult= smallestNumber(userNumber1,userNumber2,userNumber3,userNumber4);
